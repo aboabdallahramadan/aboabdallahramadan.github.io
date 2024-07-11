@@ -1,0 +1,94 @@
+<head>
+    <meta name="robots" content="noindex">
+</head>
+
+<div class="card card-signup">
+    <div class="modal-header justify-content-center">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            <i class="now-ui-icons now-ui-icons-simple-remove"></i>
+        </button>
+        <div class="header text-center">
+            <div class="logo-container">
+                <img src="assets/img/65e381ebbd7bf09f7651bddd56669920-logo-navbar-full.png" alt="Logo">
+            </div>
+        </div>
+    </div>
+
+    <form action="https://www.blueboostz.com/register" method="POST">
+
+        <div class="modal-body">
+            <div class="card-content text-center pb-5">
+
+                <div class="input-group">
+                    <span class="input-group-prepend">
+                        <span class="input-group-text"><i class="now-ui-icons now-ui-icons-email-85"></i></span>
+                    </span>
+                    <input type="text" class="form-control form-control-lg" name="email" placeholder="Email"
+                        onchange="this.value = this.value.trim()" value="" data-validation="[EMAIL]"
+                        data-validation-message="Valid email address required">
+
+
+
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-prepend">
+                        <span class="input-group-text"><i class="now-ui-icons now-ui-icons-key-25"></i></span>
+                    </span>
+                    <input type="password" class="form-control form-control-lg" name="password" placeholder="Password"
+                        data-validation="[L>=6]" data-validation-message="At least 6 characters">
+
+
+
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-prepend">
+                        <span class="input-group-text"><i class="now-ui-icons now-ui-icons-refresh-01"></i></span>
+                    </span>
+                    <input type="password" class="form-control form-control-lg" name="confirm_password"
+                        placeholder="Repeat password" data-validation="[V==password]"
+                        data-validation-message="Passwords do not match">
+
+
+
+                </div>
+
+                <div class="form-check ml-2 text-left">
+                    <label class="form-check-label ml-0" for="accept">
+                        <input class="form-check-input" type="checkbox" id="accept" name="accept" value="true" checked>
+                        <span class="form-check-sign"></span>
+                        <div style="font-size:0.95em;line-height:1.5em">By purchasing on Blue Boostz you are agreeing to
+                            our <a href="terms.html" target="_blank">Terms of Service</a>, <a href="privacy.html"
+                                target="_blank">Privacy Policy</a> and <a href="refund.html" target="_blank">Refund
+                                Policy</a>.</div>
+                    </label>
+                </div>
+
+                <div class="form-check ml-2 text-left mt-0">
+                    <label class="form-check-label ml-0" for="subscribed">
+                        <input class="form-check-input" type="checkbox" id="subscribed" name="subscribed" value="true"
+                            checked>
+                        <span class="form-check-sign"></span>
+                        <div style="font-size:0.95em;">Subscribe to news and discounts</div>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-round btn-lg btn-block btn-info mt-3 mb-4"
+                    id="btn-register">Register</button>
+
+                <div class="pull-left ml-3">
+                    <a class="modal-link show-modal-login-from-registration" href="login.html"
+                        rel="nofollow">Login</a><br>
+                </div>
+                <div class="pull-right mr-3">
+                    <a class="modal-link show-modal-reset-from-registration" href="reset/request.html"
+                        rel="nofollow">Reset password</a>
+                </div>
+
+            </div>
+        </div>
+
+    </form>
+
+</div>
